@@ -1,0 +1,123 @@
+.lunpo_wid{
+  width: 95vw;
+  margin: auto;
+}
+swiper{
+  width: 100%;
+  height: calc(100vw*790/1824);
+}
+.swiper image{
+  width: 100%;
+  height: 100%;
+}
+.swiper video{
+  width: 100%;
+  height: 100%;
+}
+.demo-text-1{
+  background-color: pink;
+  width: 100%;
+  height: 100%;
+}
+.demo-text-2{
+  background-color: rebeccapurple;
+  width: 100%;
+  height: 100%;
+}
+.demo-text-3{
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+.weui-input{
+  border: 1px solid rosybrown;
+  height: 80rpx;
+  text-align: center;
+}
+.barg{
+  margin-top: 20rpx;
+
+  width: 100%;
+  height: 20rpx;
+  background-color: wheat;
+}
+.soye_tit{
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.soye_tit text{
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.fjx{
+  margin: 10rpx 0;
+  width: 100%;
+  height: 25rpx;
+  background-color: bisque;
+}
+/**图片**/
+.list{
+  width: 100%;
+  height: 100%;
+ 
+}
+.borde{
+  width: 100%;
+  height: 10rpx;
+  background-color: antiquewhite;
+}
+.list_flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.list_flex navigator:nth-child(2n-1){
+}
+.list_goods{
+  width: 320rpx;
+  height: 400rpx;
+  margin: 0;
+  padding: 0;
+}
+.hover{
+  color: red;
+}
+.lg_image{
+  height: 280rpx;
+  overflow: hidden;
+}
+.lg_image image{
+  width: 100%;
+  height: 100%;
+}
+.lg_text{
+  width: 100%;
+  overflow:hidden; /*这一元素要加载父元素中才有用*/
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+.lg_text view:nth-child(1){
+  font-size: 25rpx;
+  font-weight: bold;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden; 
+}
+.lg_text view:nth-child(2){
+  color: red;
+  font-size: 24rpx;
+}
+
+.lg_text view:nth-child(3){
+  font-size: 20rpx;
+ color: rgb(136, 129, 129);
+}
+
+
+

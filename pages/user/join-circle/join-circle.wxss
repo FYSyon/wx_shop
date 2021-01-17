@@ -1,0 +1,34 @@
+@import "../user-template/join-circle-template/join-circle-template.wxss"; 
+.join-circle-container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 30rpx auto 0;
+    justify-content: center;
+    align-items: center;
+}
+.join-circle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.image-plus image {
+    height: 70rpx;
+    width: 70rpx;
+    position: fixed;
+    bottom: 8%;
+    right: 5%;
+    opacity: 0;
+}
+.image-plus .img-plus-style {
+    height: 70rpx;
+    width: 70rpx;
+    position: fixed;
+    bottom: 8%;
+    right: 5%;
+    z-index: 100;
+    opacity: 1;
+}
+

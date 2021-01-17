@@ -1,0 +1,28 @@
+<view class="sign-in-container">
+	<view class="sign-days">
+		<image src="/images/icon/sign_in.png"></image>
+		<text>连续签到 {{calendarSignDay}} 天</text>
+	</view>
+
+	<calendar calendar-style="calendar" header-style="header" board-style="board" next="{{false}}" prev="{{false}}" show-more-days="true">
+
+		<view wx:for="{{date-1}}" style="color:gainsboro;" wx:key="item.id">
+			<text wx:if="{{item+1==calendarSignData[item+1]}}" style="color:red;font-size:22rpx;">已签到</text>
+			<text wx:else="">{{item+1}}</text>
+		</view>
+		<view style="border-bottom: 1px solid blue; padding-bottom:8rpx;">
+			<text wx:if="{{date==calendarSignData[date]}}" style="color:red;font-size:22rpx;  border-radius: 50%;background-color: ghostwhite">已签到</text>
+			<text wx:else="" style="color:blue;">{{date}}</text>
+		</view>
+		<view wx:for="{{monthDaySize-date}}" wx:key="item.id">{{item+date+1}}</view>
+	</calendar>
+
+	<view class="calendarSign">
+		<button wx:if="{{date!=calendarSignData[date]}}" class="sign" bindtap="calendarSign">签到</button>
+		<button wx:else class="sign">今天已签到</button>
+		<view class="trumpet-content">
+			<image src="/images/icon/trumpet.png"></image>
+			<text>邀请好友假如获得30积分</text>
+		</view>
+	</view>
+</view>

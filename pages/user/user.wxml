@@ -1,0 +1,114 @@
+<import src="user-template/icon-template/user-icon-template.wxml" />
+<import src="user-template/icon-option/icon-option-template.wxml" />
+<import src="user-template/wristband-list/wristband-list-template.wxml" />
+
+<view class="user-container" style="height:{{height}}px">
+	<!-- 用户信息 -->
+	<view class="user-message">
+		<image catchtap="onImageTap" src="{{authorize?avatarUrl:'/images/icon/not_login.png'}}" data-src="{{avatarUrl}}" class="user-img"></image>
+		<view class="message">
+			<button wx:if="{{canIUse && !authorize}}" lang="zh_CN" plain="true" type="primary" size="mini" open-type="getUserInfo" bindgetuserinfo="getUserInfo">未登录</button>
+			<text wx:else class="user-name">{{userInfo.nickName}}</text>
+			<view wx:if="{{authorize}}" class="user-signIn">
+				<image class="signIn-img" src="/images/icon/sign.png"></image>
+				<text class="signIn">梦想总要有的，万一见鬼了呢</text>
+			</view>
+			<text wx:else class="tip">点击登录，领取好礼</text>
+		</view>
+		<view class="user-homePage" data-user="{{userInfo}}" bindtap="onHomePageTap">
+			<text class="homePage">个人主页</text>
+			<image src="/images/icon/arrow.png"></image>
+		</view>
+			<button open-type="contact" size="20" class="contact">联系客服</button>
+	</view>
+	<!-- 功能图标区 -->
+	<view class="user-icon">
+		<block wx:for="{{iconList}}" wx:key="item" wx:for-item="item">
+			<view bindtap="onIconTap" data-title="{{item.icon_text}}">
+				<template is="userIconTemplate" data="{{...item}}" />
+			</view>
+		</block>
+	</view>
+	<!-- 选项区 -->
+	<view class="user-option">
+		<view class="icon-option-container">
+			<image class="option-img" src="/images/icon/target.png"></image>
+			<text class="option-text">早睡早起</text>
+			<view class="right">
+				<switch type="switch" checked="{{false}}" color="blue" bindchange="onSwitchCheck" style="zoom:0.7" />
+			</view>
+		</view>
+
+		<block wx:for="{{optionList}}" wx:key="item" wx:for-item="item">
+			<view bindtap="onDetailTap" data-id="{{item.optionId}}" data-title="{{item.option_text}}">
+				<template is="iconOptionTemplate" data="{{...item}}" />
+			</view>
+		</block>
+	</view>
+	<!-- 手环 -->
+	<view class="wristband">
+		<view class="wristband-circle" bindtap="onListBlockTap">
+			<text class="circle-text">手环</text>
+		</view>
+	</view>
+	<!-- 手环功能 -->
+	<view class="wristband-list" wx:if="{{isListBlock}}" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+		<block wx:for="{{wristBandList}}" wx:for-item="item" wx:key="item" wx:for-index="index">
+			<view data-iconId="item.iconId">
+				<template is="wristbandListTemplate" data="{{...item,onListTap}}" />
+			</view>
+		</block>
+		<!-- 更多 -->
+		<view class="wristband-container" wx:if="{{isMore}}">
+			<view class="img-circle" catchtap="onMoreTap">
+				<image class="wristband-img" src="/images/hover/icon_more.png"></image>
+			</view>
+		</view>
+		<!-- 更多下的功能 -->
+		<block wx:for="{{moreBandList}}" wx:if="{{isBlock}}" wx:key="item" wx:for-item="item" wx:for-index="index">
+			<view data-iconId="item.iconId">
+				<template is="wristbandListTemplate" data="{{...item}}" />
+			</view>
+		</block>
+	</view>
+
+	<!-- 早睡早起 -->
+	<view class="{{tipBlock?'mask':''}}">
+		<view class="user-tip " wx:if="{{tipBlock}}">
+			<text class="tip-title">早睡早起</text>
+
+			<view class="time-list">
+				<view class="time-set">
+					<text class="set-text">系统默认</text>
+					<radio class="set-radio" checked="true" color="blue"></radio>
+				</view>
+				<view class="picker-group">
+					<picker mode="time" class="time" value="{{time[0]}}" start="21:00" end="01:00" bindchange="onTimeChange_1">
+						<view class="picker">
+							{{time[0]}}
+						</view>
+					</picker>
+					<picker mode="time" class="time" value="{{time[1]}}" start="06:00" end="10:00" bindchange="onTimeChange_2">
+						— {{time[1]}}
+					</picker>
+				</view>
+			</view>
+
+			<view class="time-list">
+				<view class="time-set">
+					<text class="set-text">自定义</text>
+					<radio class="set-radio" checked="{{false}}" color="blue"></radio>
+				</view>
+				<view class="picker-group">
+					<picker mode="time" class="time" value="{{time[2]}}" start="00:00" end="23:59" bindchange="onTimeChange_3">
+						{{time[2]}}
+					</picker>
+					<picker mode="time" class="time" value="{{time[3]}}" start="00:00" end="23:59" bindchange="onTimeChange_4">
+						— {{time[3]}}
+					</picker>
+				</view>
+			</view>
+			<icon type="clear" class="iconClear" color="#000" size="20" catchtap="onCancelTap"></icon>
+		</view>
+	</view>
+</view>

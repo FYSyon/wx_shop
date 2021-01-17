@@ -1,0 +1,73 @@
+{
+    "pages": [
+        "pages/shop/goods_list/index",
+
+        "pages/shop/lunpo/lunpo1",
+
+        "pages/circle/index/index",
+        "pages/circle/vedio/vedio",
+        "pages/index/index",
+
+        "pages/circle/file/file",
+        "pages/circle/video-detail/video-detail",
+        "pages/user/order-address/order-address",
+        "pages/user/user",
+        "pages/user/sign-in/sign-in",
+        "pages/user/order-form/order-form",
+        "pages/user/user-feedback/user-feedback",
+        "pages/user/planning/planning",
+        "pages/user/join-circle/join-circle",
+        "pages/user/homePage/homePage",
+
+        "pages/shop/goods_detail/index",
+        "pages/shop/cart/index",
+        "pages/shop/pay/index",
+        "pages/shop/order/index",
+
+        "pages/shop/auth/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "borderStyle": "white",
+        "position": "bottom",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/images/tabBarIcon/home.png",
+                "selectedIconPath": "/images/tabBarIcon/home-select.png"
+            },
+            {
+                "pagePath": "pages/circle/index/index",
+                "text": "圈子",
+                "iconPath": "/images/tabBarIcon/circle.png",
+                "selectedIconPath": "/images/tabBarIcon/circle-select.png"
+            },
+            {
+                "pagePath": "pages/shop/goods_list/index",
+                "text": "商城",
+                "iconPath": "/images/tabBarIcon/shop.png",
+                "selectedIconPath": "/images/tabBarIcon/shop-select.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "我的",
+                "iconPath": "/images/tabBarIcon/user.png",
+                "selectedIconPath": "/images/tabBarIcon/user-select.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap75.json",
+    "navigateToMiniProgramAppIdList": [
+        "wx6c2423928b92ca14"
+    ],
+    "usingComponents": {},
+    "plugins": {
+        "calendar": {
+            "version": "1.1.3",
+            "provider": "wx92c68dae5a8bb046"
+        }
+    }
+}

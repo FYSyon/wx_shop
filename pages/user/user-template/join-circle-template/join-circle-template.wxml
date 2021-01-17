@@ -1,0 +1,6 @@
+<template name="join-circle-template">
+	<view class="circle">
+		<text class="text">{{item}}</text>
+		<text class="exit">退出</text>
+	</view>
+</template>

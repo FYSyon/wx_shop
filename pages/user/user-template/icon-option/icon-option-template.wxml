@@ -1,0 +1,9 @@
+<template name="iconOptionTemplate">
+	<view class="icon-option-container">
+		<image class="option-img" src="{{option_img}}"></image>
+		<text class="option-text">{{option_text}}</text>
+		<view class="right">
+			<image class="icon-right" src="/images/icon/arrow.png"></image>
+		</view>
+	</view>
+</template>

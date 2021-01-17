@@ -1,0 +1,82 @@
+<view class="lunpo_wid">
+    <swiper indicator-dots="{{indicatorDots}}"
+       circular="true" interval="{{interval}}" duration="{{duration}}" class="swiper">
+      <block wx:for="{{back_img}}" wx:key="*this" >
+      <swiper-item bindtap="magnify" data-url="{{item}}">
+       <image lazy-load src="{{item}}" />
+      </swiper-item>
+      </block>
+    </swiper>
+  </view>
+<view class="fjx">
+  
+</view>
+  
+<view>
+    <tabs list_2="{{tabs1}}"  bindchider="childer">
+    <block wx:if="{{tabs1[0].isActive}}">
+
+      <view class="list list_flex " >
+        <navigator class="list_goods " 
+        hover-class="hover"
+        wx:for="{{goods_list1}}"
+        wx:key="goods_id"
+        url="/pages/shop/goods_detail/index?goods_id={{item.goods_id}}&goods_name={{item.goods_name}}&maniy={{item.maniy}}&pv={{item.pv}}&url={{item.goods_small_logo}}"
+        >
+          <view class="lg_image">
+            <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1585914291461&di=64c6716ce73690aaef8a514bcf4c3384&imgtype=0&src=http%3A%2F%2Fimg.jk51.com%2Fimg_jk51%2F150423708.jpeg'}}"></image>
+          </view>
+          <view class="lg_text" >
+            <view>{{item.goods_name}}</view>
+            <view>${{item.maniy}}</view>
+            <view>以出售{{item.pv}}件</view>
+          </view>
+           <view class="borde">
+          
+        </view>
+        </navigator>
+      </view>
+    </block>
+ <!--jiangsheng-->
+        <block wx:if="{{tabs1[1].isActive}}" >
+       
+        <view class="list list_flex" >
+        <navigator class="list_goods" 
+        wx:for="{{goods_list2}}"
+        wx:key="goods_id"
+        url="/pages/shop/goods_detail/index?goods_id={{item.goods_id}}&goods_name={{item.goods_name}}&maniy={{item.maniy}}&pv={{item.pv}}"
+        >
+          <view class="lg_image">
+            <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1585914291461&di=64c6716ce73690aaef8a514bcf4c3384&imgtype=0&src=http%3A%2F%2Fimg.jk51.com%2Fimg_jk51%2F150423708.jpeg'}}"></image>
+          </view>
+          <view class="lg_text">
+            <view>{{item.goods_name}}</view>
+            <view>${{item.maniy}}</view>
+            <view>以出售{{item.pv}}件</view>
+          </view>
+        </navigator>
+      </view>
+        
+        </block>
+        <block wx:if="{{tabs1[2].isActive}}">
+        
+        <!--生活-->
+        <view class="list list_flex" >
+        <navigator class="list_goods" 
+        wx:for="{{goods_list3}}"
+        wx:key="goods_id"
+        url="/pages/shop/goods_detail/index?goods_id={{item.goods_id}}&goods_name={{item.goods_name}}&maniy={{item.maniy}}&pv={{item.pv}}"
+        >
+          <view class="lg_image">
+            <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1585914291461&di=64c6716ce73690aaef8a514bcf4c3384&imgtype=0&src=http%3A%2F%2Fimg.jk51.com%2Fimg_jk51%2F150423708.jpeg'}}"></image>
+          </view>
+          <view class="lg_text">
+            <view>{{item.goods_name}}</view>
+            <view>${{item.maniy}}</view>
+            <view>以出售{{item.pv}}件</view>
+          </view>
+        </navigator>
+      </view>
+        </block>
+    </tabs>
+</view>

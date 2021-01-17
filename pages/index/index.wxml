@@ -1,0 +1,103 @@
+<view class="contai">
+	<!-- 音乐 -->
+	<view catchtap="onMusicTap" class="music">
+		<image class="music-img"   src="{{isPlayingMusic?'/images/index/music-stop.png':'/images/index/music-start.png'}}"></image>
+	</view>
+	<!-- 计时器 -->
+	<view class="circle-container">
+		<view class="circle-outside">
+			<view class="circle-inside">
+				<text>{{timecount}}</text>
+				<text class="circle-text" catchtap="start">{{stop?'暂停':'开始'}}</text>
+			</view>
+		</view>
+		<text class="stop" catchtap="Reset">重置</text>
+	</view>
+
+	<!--新建任务-->
+	<view class="target-list">
+		<view class="rehearse-container">
+			<text class="rehearse-title">单词背诵</text>
+			<picker mode="time" class="picker-time" value="{{time}}" bindchange="onDateChange">
+				{{time}} — 09:30
+			</picker>
+			<radio checked="{{true}}" color="blue" style="zoom:.6"></radio>
+		</view>
+		
+		<block wx:for="{{cc_data}}" wx:key="*this">
+		<view class=" rehearse-container  add-target-one" >
+			<text  class="rehearse-title" >{{item.text}}</text>
+			<picker  mode="time" class="picker-time" value="{{item.data}}" bindchange="onDateChange2" data-index="{{index}}">
+					{{item.data}} —{{item.old}}
+			</picker>
+			<radio checked="{{true}}" color="blue" style="zoom:.6"></radio>
+		</view>
+		</block>
+
+		<view class="add-target" bindtap="onBlockTap">
+			<text class="z1">添加目标</text>
+			<text class="z2">+</text>
+		</view>
+	</view>
+
+	<!--任务栏-->
+	<view wx:if="{{isBlock}}" class="{{isBlock?'active':''}}">
+		<view class="taskbar" duration="500">
+			<view class="mubiao">
+				目标：
+				<input focus="" class="input" bindinput="input"></input>
+			</view>
+			<view class="mubiao">
+				目标分类：
+				<input focus="" class="input"></input>
+			</view>
+			<view class="mubiao">
+				激励自己的话：
+				<input focus="" class="input3"></input>
+			</view>
+			<!--设置日期-->
+			<text class="zt">设置日期：</text>
+			<view class="SettingDate">
+				<view class="date">
+					<text class="nian">年</text>
+					<image class="xiala" src="/images/index/arrowdown.png"></image>
+					<text class="nian">月</text>
+					<image class="xiala" src="/images/index/arrowdown.png"></image>
+					<text class="nian">日</text>
+					<image class="xiala" src="/images/index/arrowdown.png"></image>
+				</view>
+				<view class="ShortTerm"></view>
+				<view class="date">
+					<text class="nian">年</text>
+					<image class="xiala" src="/images/index/arrowdown.png"></image>
+					<text class="nian">月</text>
+					<image class="xiala" src="/images/index/arrowdown.png"></image>
+					<text class="nian">日</text>
+					<image class="xiala" src="/images/index/arrowdown.png"></image>
+				</view>
+			</view>
+			<!--设置时间-->
+			<text class=" zt">设置时间：</text>
+			<view class="SettingDate">
+				<view class="date">
+					<text class="time">00:00</text>
+				</view>
+				<view class="ShortTerm"></view>
+				<view class="date">
+					<text class="time">00:00</text>
+				</view>
+			</view>
+
+			<view class="meitian">
+				<text class="every-day">每天重复</text>
+				<switch class="kaiguan" color="blue" checked="{{false}}"></switch>
+			</view>
+
+			<view class="queren">
+				<button bindtap="quer" class="queren2" style="width: 80px;height: 30px;"><text>确认</text></button>
+			</view>
+
+			<icon type="clear" size="16" color="#000" class="clear-icon" catchtap="clearTap"></icon>
+		</view>
+	</view>
+</view>

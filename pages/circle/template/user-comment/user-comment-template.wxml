@@ -1,0 +1,15 @@
+<template name="user-comment-template">
+	<view class="comment-container">
+		<view class="left">
+			<image src="/images/circle/avatar/5.png" class="avatar"></image>
+			<view class="comment-detail">
+				<text class="user-name">早起早起早起</text>
+				<rich-text class="comment">如果我没记错的话这是某一年的高联题，这本书我也有，如果我没记错的话这是某一年的高联题，这本书我也有</rich-text>
+			</view>
+		</view>
+		<view class="like">
+			<image src="/images/circle/like.png"></image>
+			<text>3</text>
+		</view>
+	</view>
+</template>

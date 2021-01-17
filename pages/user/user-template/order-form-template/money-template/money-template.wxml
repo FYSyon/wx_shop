@@ -1,0 +1,8 @@
+<template name="money-template">
+    <view class="money-container">
+        <text class="commodity-number">共<text class="number"> 1 </text>件商品</text>
+        <text class="money-text">订单金额</text>
+        <text class="money">￥ {{order_money}}</text>
+        
+    </view>
+</template>

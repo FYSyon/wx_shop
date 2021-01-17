@@ -1,0 +1,35 @@
+.shop-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    justify-content: space-between;
+}
+.shop-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.shop {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15rpx;
+}
+.shop text {
+    font-size: 24rpx;
+    color: black;
+    font-weight: 540;
+    margin-right: 6rpx;
+}
+.shop image {
+    width: 25rpx;
+    height: 25rpx;
+    margin-top: 6rpx;
+}
+.shop-number {
+    color: #666;
+    font-size: 20rpx;
+}
+.shop-status {
+    color: #999;
+    font-size: 26rpx;
+}

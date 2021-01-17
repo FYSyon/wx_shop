@@ -1,0 +1,99 @@
+<view class="file-container">
+	<view class="file-item" bindtap="download" data-url="https://776a-wjuploat-b330j-1302021469.tcb.qcloud.la/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A05%20%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%9A%84%E7%AB%AF%E5%8F%A3%E9%85%8D%E7%BD%AE.doc?sign=0c2c0d62129c742f71920c8c8f85bff7&t=1588472293">
+		<image class="file-img" src="/images/circle/1.png"></image>
+		<view class="file-content">
+			<view class="file-content-top">
+				<text class="file-title">2019插本数学真题.doc </text>
+				<text class="view-num">210人查看</text>
+			</view>
+			<view class="file-content-bottom">
+				<view class="file-message">04-07
+					<text class="form-name">来自<text class="user-name">小可爱</text></text> 21.8k
+				</view>
+				<text class="integral-num">3积分</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="file-item" bindtap="download" data-url="https://776a-wjuploat-b330j-1302021469.tcb.qcloud.la/git.docx?sign=8d05c8f9b6cfb6d0183b0750d9c79fb6&t=1588472621">
+		<image class="file-img" src="/images/circle/1.png"></image>
+		<view class="file-content">
+			<view class="file-content-top">
+				<text class="file-title">练习（1）.doc </text>
+				<text class="view-num">210人查看</text>
+			</view>
+			<view class="file-content-bottom">
+				<view class="file-message">04-07
+					<text class="form-name">来自<text class="user-name">小可爱</text></text> 21.8k
+				</view>
+				<text class="integral-num">3积分</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="file-item" bindtap="download" data-url="https://776a-wjuploat-b330j-1302021469.tcb.qcloud.la/%E5%B8%88%E8%AE%AD%E5%AE%9D%E7%9B%B4%E6%92%AD%E8%AF%BE%E5%AD%A6%E7%94%9F%E6%93%8D%E4%BD%9C%E6%8C%87%E5%BC%95.pdf?sign=bcea63f85ca0bc444a568c5e0b045316&t=1588472774">
+		<image class="file-img" src="/images/circle/1.png"></image>
+		<view class="file-content">
+			<view class="file-content-top">
+				<text class="file-title">参考文献及其翻译.doc </text>
+				<text class="view-num">210人查看</text>
+			</view>
+			<view class="file-content-bottom">
+				<view class="file-message">04-07
+					<text class="form-name">来自<text class="user-name">小可爱</text></text> 21.8k
+				</view>
+				<text class="integral-num">3积分</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="file-item" bindtap="download" data-url="https://776a-wjuploat-b330j-1302021469.tcb.qcloud.la/%E5%B8%88%E8%AE%AD%E5%AE%9D%E7%9B%B%E7%94%9F%E6%93%8D%E4%BD%9C%E6%8C%87%E5%BC%95.pdf?sign=bcea63f85ca0bc444a568c5e0b045316&t=1588472774">
+		<image class="file-img" src="/images/circle/3.png"></image>
+		<view class="file-content">
+			<view class="file-content-top">
+				<text class="file-title">.视听语言.ppt</text>
+				<text class="view-num">112人查看</text>
+			</view>
+			<view class="file-content-bottom">
+				<view class="file-message">04-07
+					<text class="form-name">来自<text class="user-name">小可爱</text></text> 21.8k
+				</view>
+				<text class="integral-num">3积分</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="file-item">
+		<image class="file-img" src="/images/circle/3.png"></image>
+		<view class="file-content">
+			<view class="file-content-top">
+				<text class="file-title">插本政治笔记.ppt </text>
+				<text class="view-num">105人查看</text>
+			</view>
+			<view class="file-content-bottom">
+				<view class="file-message">04-07
+            <text class="form-name">来自<text class="user-name">小可爱</text></text> 21.8k
+				</view>
+				<text class="integral-num">3积分</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="file-item">
+		<image class="file-img" src="/images/circle/1.png"></image>
+		<view class="file-content">
+			<view class="file-content-top">
+				<text class="file-title">2019插本数学真题.doc </text>
+				<text class="view-num">210人查看</text>
+			</view>
+			<view class="file-content-bottom">
+				<view class="file-message">04-07
+					<text class="form-name">来自<text class="user-name">小可爱</text></text> 21.8k
+				</view>
+				<text class="integral-num">3积分</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+<text class="user-motto"></text>

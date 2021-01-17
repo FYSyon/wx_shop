@@ -1,0 +1,67 @@
+.sign-in-container {
+    display: flex;
+    flex-direction: column;
+}
+.sign-days {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50rpx;
+    margin-left: 20rpx;
+}
+.sign-days image {
+    width: 35rpx;
+    height: 35rpx;
+    margin-right: 15rpx;
+}
+.sign-days text {
+    color: #d81e06;
+    font-size: 34rpx;
+}
+.calendar {
+    background-color: #fff;
+    margin-top: 20rpx;
+    border-radius: 30rpx;
+    box-shadow: 0 20rpx 30rpx #bbb, 0 -20rpx 30rpx#bbb;
+}
+.header {
+    font-size: medium;
+    color: #59518d;
+}
+.board {
+    color: #c7cbe2;
+}
+
+.calendarSign {
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calendarSign .sign {
+    width: 250rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 34rpx;
+    background-color: darkkhaki;
+    border-radius: 30rpx;
+}
+.trumpet-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rpx;
+    align-items: center;
+}
+.trumpet-content image {
+    width: 25rpx;
+    height: 25rpx;
+    margin-right: 10rpx;
+}
+.trumpet-content text {
+    font-size: 24rpx;
+    color: #f4ea2a;
+}

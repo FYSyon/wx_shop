@@ -1,0 +1,12 @@
+/* commpent/commpent1.wxss */
+.taber_title{
+  display: flex;
+}
+.title_childer{
+  flex:1;
+  display: flex;
+  justify-content: center;
+}
+.active{
+  color: red;
+}

@@ -1,0 +1,216 @@
+@import "user-template/icon-template/user-icon-template.wxss";
+@import "user-template/icon-option/icon-option-template.wxss";
+@import "user-template/wristband-list/wristband-list-template.wxss";
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.user-message {
+    width: 100%;
+    height: 200rpx;
+    margin: 20rpx 15rpx 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.user-img {
+    width: 170rpx;
+    height: 170rpx;
+    margin-left: 40rpx;
+    border-radius: 50%;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50rpx;
+}
+.message button {
+    margin-left: 0;
+    margin-right: 0;
+    width: 180rpx;
+}
+.user-name {
+    font-size: 34rpx;
+    font-weight: 500;
+    margin-right: 10rpx;
+    color: #333;
+}
+.tip {
+    color: #666;
+    font-size: 25rpx;
+    margin-top: 10rpx;
+}
+.user-signIn {
+    display: inline-flex;
+    flex-direction: row;
+    border-radius: 20rpx;
+    margin: 10rpx 0 0 5rpx;
+}
+.signIn-img {
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: -2rpx;
+}
+.signIn {
+    font-size: 20rpx;
+    color: #999;
+    white-space: normal;
+}
+.user-homePage {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 45rpx;
+    right: 15rpx;
+}
+.homePage {
+    font-size: 23rpx;
+    color: #666;
+    margin-right: 4rpx;
+    margin-top: 1rpx;
+}
+.user-homePage image {
+    width: 30rpx;
+    height: 30rpx;
+    margin-top: 5rpx;
+}
+.contact {
+    position: absolute;
+    bottom: 30rpx;
+    right: 20rpx;
+    width: 150rpx;
+    height: 50rpx;
+    padding: 0;
+    line-height: 50rpx;
+    text-align: center;
+    color: #666;
+    background-color: #eee;
+    font-size: 30rpx;
+}
+/* 图标 */
+.user-icon {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 80rpx;
+    margin: 20rpx 0 30rpx;
+}
+/* 选项 */
+.user-option {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto 0;
+}
+/* 手环 */
+.wristband {
+    position: absolute;
+    bottom: 90rpx;
+    right: 50rpx;
+}
+.wristband-circle {
+    width: 90rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-radius: 45rpx;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgba(249, 181, 82, 1);
+    box-sizing: border-box;
+    box-shadow: 0 0 30rpx  yellow ;
+    -webkit-box-shadow: 0 0 30rpx  yellow ;
+    -moz-box-shadow: 0 0 30rpx  yellow ;
+
+}
+.circle-text {
+    font-size: 25rpx;
+    color: #333;
+}
+/* 手环功能 */
+.wristband-list {
+    width: 330rpx;
+    height: 250rpx;
+    padding: 30rpx 10rpx;
+    border-radius: 30rpx;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 210rpx;
+    right: 30rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* 早睡早起 */
+.mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(250, 255, 250, .3);
+}
+.user-tip {
+    width: 500rpx;
+    height: 550rpx;
+    background-color: rgb(130, 205, 201);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20rpx 15rpx 0;
+    border-radius: 10rpx;
+    align-items: center;
+    z-index: 999;
+}
+.tip-title {
+    /* background-color: none; */
+    color: #000;
+    font-size: 28rpx;
+    font-weight: 550;
+    margin-bottom: 30rpx;
+}
+.time-list {
+    display: flex;
+    flex-direction: column;
+    width: 420rpx;
+    height: 150rpx;
+    background-color: rgba(227, 236, 236,.5);
+    border-radius: 5rpx;
+    padding: 20rpx 30rpx 0;
+    margin: 25rpx auto 0; 
+}
+.time-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25rpx;
+}
+.set-text {
+    color: #333;
+    font-size: 28rpx;
+}
+.set-radio {
+    zoom: 0.7;
+}
+.picker-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.time {
+    text-align: center;
+} 
+.iconClear {
+    position: absolute;
+    top: -22rpx;
+    right: -22rpx;
+    z-index: 10;
+}

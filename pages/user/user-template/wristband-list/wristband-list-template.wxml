@@ -1,0 +1,8 @@
+<template name="wristbandListTemplate">
+    <view class="wristband-container">
+    <view class="img-circle" catchtap="onListTap">
+        <image class="wristband-img" src="{{icon_img}}"></image>
+    </view>
+        <text class="wristband-text">{{icon_text}}</text>
+    </view>
+</template>

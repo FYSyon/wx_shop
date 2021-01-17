@@ -1,0 +1,29 @@
+<view class="user-homePage">
+	<image class="head-image" mode="scaleToFill" src="{{userInfo.avatarUrl}}"></image>
+	<view class="user-message">
+		<image class="avatar" src="{{userInfo.avatarUrl}}" data-avatar="{{userInfo.avatarUrl}}" catchtap="onImageTap"></image>
+		<text class="user-name">{{userInfo.nickName}}</text>
+		<text class="sign">介绍一下你自己</text>
+	</view>
+	<view class="user-setMessage {{showMore?'showmore':'hiddenmore'}}">
+		<view class="set-list {{idx>1 ? 'more-item' : ''}}" wx:for="{{message}}" wx:for-item="item" wx:for-index="idx">
+			<text class="set-left">{{item.left}}</text>
+			<text class="set-right">{{item.right}}</text>
+		</view>
+		<view class="add-data {{!showMore?'more-item':''}}">
+			<image src="/images/icon/add.png"></image>
+			<text>添加个人资料</text>
+		</view>
+
+		<block wx:if="{{message.length>2}}">
+			<view wx:if="{{showMore}}" class="set-tip" ontap="onMoreShow">
+				<text>收起</text>
+				<image src="/images/icon/arrowup.png"></image>
+			</view>
+			<view wx:else class="set-tip" bindtap="onMoreShow">
+				<text>显示更多</text>
+				<image class="rotate" src="/images/icon/arrowup.png"></image>
+			</view>
+		</block>
+	</view>
+</view>

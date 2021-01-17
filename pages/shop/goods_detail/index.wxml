@@ -1,0 +1,102 @@
+<!--轮播图-->
+<view class="lunpo_wid">
+    <swiper indicator-dots
+      autoplay class="swiper">
+      <block wx:for="{{params.url}}" wx:key="*this" >
+      <swiper-item bindtap="magnify" data-url="{{item}}">
+       <image lazy-load src="{{item}}" />
+      </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+<!--价格-->
+<view class="goods">
+    <view class="goods_text">{{params.goods_name}}</view>
+        <view class="goods_list">
+            <text class="goods_moniy">￥{{params.maniy}}</text>
+          <text >销量{{params.pv}}</text>
+          <text >累计评论{{params.review}}</text>
+    </view>
+</view>
+<!--推荐商品-->
+<view>
+    <view>
+        <view class="reco_title">
+            相关商品
+        </view>
+        <view class="recomed">
+            <view class="reco_1" wx:for="{{params.url}}" wx:key="*this">
+                <image  src="{{item}}" />
+                <view class="reco_text" >
+                    商品asdsf商品asdsf商品asdsf
+                </view>
+            </view>
+            
+        </view>
+            
+    </view>
+</view>
+  
+
+<!--评论-->
+<view class="comment_area">
+    <tabs list_2="{{tabs1}}"  bindchider="childer" class="">
+        <block wx:if="{{tabs1[0].isActive}}" >
+        <view class="comment_list">
+          <view class="comment_text">    
+              印刷质量好，以漫画形式讲述，有图有文字，不枯燥，有趣味性的学习，正品不错👍会继续关注购买🌹
+          </view>
+        
+           <view class="user_data">
+               <text >用户名称</text>
+               <text >时间</text>
+           </view>
+        </view>
+        </block>
+        <block wx:if="{{tabs1[1].isActive}}" >
+            <view>
+                <view class="remark">
+                    <form bindsubmit="confirm">
+                    <textarea placeholder="form 中的 textarea" name="textarea" value="{{info}}"/>
+                    <button form-type="submit"> 提交 </button>
+                    </form>
+                </view>
+            </view>
+        </block>
+    </tabs>
+</view>
+  
+
+  
+
+
+<!--下标-->
+<view>
+    <view class="tool">
+        <view class="tool_item"> 
+            <view class="iconfont icon-icon-test2"></view>
+            <view>联系客服</view>
+            <!--利用button然后让他的 定位 宽高为100 透明就不会影响到其他元素，还可以实现事件-->
+            <button open-type="contact"></button>
+        </view>
+        <view class="tool_item"> 
+            <view class="iconfont icon-icon-test1"></view>
+            <view>分享</view>
+            <button open-type="share"></button>
+        </view>
+        <navigator url="/pages/shop/cart/index" class="tool_item"> 
+            <view class="iconfont icon-icon-test"></view>
+            <view>购物车</view>
+        </navigator>
+        <view class="tool_item tool_test" bindtap="hanlecart">
+            加入购物车
+        </view>
+        <view class="tool_item tool_test2" bindtap="hanlecart2">
+            立即购买      
+        </view>
+            
+    </view>
+      
+</view>
+  

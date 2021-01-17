@@ -1,0 +1,73 @@
+.commodity-container {
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 25rpx 0 40rpx 10rpx;
+}
+.commodity-image {
+    width: 150rpx;
+    height: 150rpx;
+    border: 1px solid #ddd;
+    border-radius: 10rpx;
+    margin-right: 25rpx;
+}
+.commodity-message {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.commodity-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60rpx;
+}
+.commodity-detail {
+    font-size: 24rpx;
+    color: #333;
+    width: 240rpx;
+    height: 70rpx;
+    /* 文字超出宽度将显示省略号，注意不能加height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.commodity-money {
+    justify-content: right;
+    font-size: 25rpx;
+    color: #333;
+}
+.commodity-middle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #999;
+    font-size: 22rpx;
+    justify-content: space-between;
+    margin: 15rpx 0;
+}
+.commodity-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.commodity-bottom .return {
+    font-size: 18rpx;
+    border-radius: 5rpx;
+    padding: 0 5rpx;
+    align-items: center;
+    background-color: #ecf2fe;
+    color: #5f75a6;
+    margin-right: 10rpx;
+}
+.commodity-bottom .barter {
+    font-size: 20rpx;
+    color: #999;
+    margin-left:10rpx;
+    vertical-align: middle;
+}

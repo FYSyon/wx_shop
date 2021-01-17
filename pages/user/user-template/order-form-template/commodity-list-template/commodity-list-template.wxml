@@ -1,0 +1,11 @@
+<import src="../shop-template/shop-template.wxml" />
+<import src="../commodity-template/commodity-template.wxml" />
+<import src="../money-template/money-template.wxml" />
+
+<template name="commodity-list-template">
+	<view class="commodity-list-container">
+		<template is="shop-template" data="{{shop_name:shop_name,order_number:order_number,status:status}}"/>
+		<template is="commodity-template" data="{{commodity_img:commodity_img,commodity_title:commodity_title,commodity_money:commodity_money,commodity_detail:commodity_detail,commodity_return:commodity_return,commodity_darter:commodity_darter}}"/>
+		<template is="money-template" data="{{order_money:order_money}}"/>
+	</view>
+</template>

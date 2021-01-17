@@ -1,0 +1,23 @@
+<template name="detail-item-template">
+	<view class="detail-item">
+		<view class="detail-image">
+			<image src="{{head_img}}" mode="aspectFill"></image>
+			<text>{{head_tip}}</text>
+			<image src="/images/circle/video.png"></image>
+		</view>
+		<rich-text class="detail-content">
+			{{detail_title}}
+		</rich-text>
+
+		<view class="message">
+			<view class="avatar">
+				<image src="{{avarat}}"></image>
+				<text>{{author_name}}</text>
+			</view>
+			<view class="like">
+				<image src="/images/circle/like.png"></image>
+				<text>{{like_num}}</text>
+			</view>
+		</view>
+	</view>
+</template>

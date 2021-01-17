@@ -1,0 +1,55 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.file-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.file-item{
+  height:100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2%;
+  margin-bottom: 20rpx;
+}
+.file-img {
+  width: 11%;
+  height: 100rpx;
+}
+.file-content {
+  display: flex;
+  flex-direction: column;
+  width: 84%;
+  margin: 0 2.5%;
+}
+.file-content-top, .file-content-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 27rpx;
+  color: #666;
+}
+.file-content-top {
+  margin-bottom: 10rpx;
+}
+.file-title {
+  font-size: 30rpx;
+  color: #000;
+  font-weight: 550;
+}
+.form-name {
+  margin: 0 10rpx;
+}
+.user-name {
+  color: #2590e0;
+}
+.integral-num {
+  color:green;
+}

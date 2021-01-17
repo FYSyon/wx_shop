@@ -1,0 +1,6 @@
+<template name="userIconTemplate">
+    <view class="icon-container">
+        <image class="icon-img" src="{{icon_img}}"></image>
+        <text class="icon-text">{{icon_text}}</text>
+    </view>
+</template>

@@ -1,0 +1,16 @@
+<!--commpent/commpent1.wxml-->
+<view >
+  <view  class="taber_title" >
+    <view 
+    wx:for="{{list_2}}" 
+    wx:key="id"
+    class="title_childer {{item.isActive?'active':''}}" bindtap="bind_active" 
+    data-index="{{index}}">
+      {{item.value}}
+    </view>
+  </view>
+
+  <view>
+    <slot></slot>
+  </view>
+</view>

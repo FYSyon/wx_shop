@@ -1,0 +1,22 @@
+.circle {
+    height: 100rpx;
+    line-height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;   
+    padding-left: 80rpx;
+    box-shadow: 0 0 8rpx #bbb;
+    position: relative;
+    margin-bottom: 40rpx;
+}
+.circle .text {
+    font-size: 30rpx;
+    color: #333;
+}
+.circle .exit {
+    font-size: 22rpx;
+    color: #999;
+    position: absolute;
+    top: -25rpx;
+    right: 15rpx;
+}

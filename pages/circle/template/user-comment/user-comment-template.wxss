@@ -1,0 +1,44 @@
+.comment-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin: 20rpx 0;
+}
+.left {
+    display: flex;
+    flex-direction: row;
+}
+.avatar {
+    width: 65rpx;
+    height: 65rpx;
+}
+.comment-detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25rpx;
+    width: 85%;
+    font-size: 26rpx;
+    color: #666;
+}
+.user-name {
+    margin-bottom: 10rpx;
+    font-size: 28rpx;
+}
+.like {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.like image {
+    width: 40rpx;
+    height: 40rpx;
+    margin-bottom: 5rpx;
+}
+.like text {
+    font-size: 25rpx;
+    color: #666;
+}

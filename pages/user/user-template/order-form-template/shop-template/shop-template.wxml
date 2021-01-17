@@ -1,0 +1,12 @@
+<template name="shop-template">
+    <view class="shop-container">
+        <view class="shop-message">
+            <view class="shop">
+                <text>{{shop_name}}</text>
+                <image src="/images/icon/arrow.png"></image>
+            </view>
+            <text class="shop-number">订单编号 {{order_number}}</text>
+        </view>
+        <text class="shop-status">{{status}}</text>
+    </view>
+</template>

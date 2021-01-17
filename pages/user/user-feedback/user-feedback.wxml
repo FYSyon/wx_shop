@@ -1,0 +1,13 @@
+<view class="user-feedback">
+    <text class="page-title">用户反馈</text>
+    <textarea class="feedback-content feedback-input" placeholder="请提出您宝贵的体验建议，我们将不断优化您的体验。" placeholder-class="placeholder-textarea"></textarea>
+    <input class="telphone feedback-input" type="number" confirm-type="done" placeholder="您的手机号（必填）" placeholder-class="placeholder-input"></input>
+    <view class="upload-image">
+        <text class="upload-tip">问题截图（选填，最多上传9张）</text>
+        <view class="upload-content">
+            <image src="/images/icon/cenime.png"></image>
+            <text>上传图片</text>
+        </view>
+    </view>
+    <button class="submit" size="mini" form-type="submit" >提交</button>
+</view>

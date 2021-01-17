@@ -1,0 +1,53 @@
+<view>
+  <view class="lunpo_wid">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" circular="true" interval="{{interval}}" duration="400" class="swiper">
+      <block wx:for="{{back_img}}" wx:key="*this" >
+      <swiper-item>
+       <image lazy-load src="{{item}}" />
+      </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--标签+商品-->
+   <tabs list_2="{{tabs1}}"  bindchider="childer">
+        <block wx:if="{{tabs1[0].isActive}}">
+
+      <view class="list list_flex">
+      <view class="list_goods">
+        <view class="lg_image">
+          <image src="http://img4.imgtn.bdimg.com/it/u=2855462541,2022367991&fm=26&gp=0.jpg"></image>
+        </view>
+        <view class="lg_text">
+          <view>小溪好桃子不要错过你值得拥有</view>
+          <view>98积分+24.9</view>
+          <view>以出售666件</view>
+        </view>
+      </view>
+      <view class="list_goods">
+        <view class="lg_image">
+          <image src="http://img4.imgtn.bdimg.com/it/u=2855462541,2022367991&fm=26&gp=0.jpg"></image>
+        </view>
+        <view class="lg_text">
+          <view>小溪好桃子不要错过你值得拥有</view>
+          <view>98积分+24.9</view>
+          <view>以出售666件</view>
+        </view>
+      </view>
+      <view class="list_goods">
+        <view class="lg_image">
+          <image src="http://img4.imgtn.bdimg.com/it/u=2855462541,2022367991&fm=26&gp=0.jpg"></image>
+        </view>
+        <view class="lg_text">
+          <view>小溪好桃子不要错过你值得拥有</view>
+          <view>98积分+24.9</view>
+          <view>以出售666件</view>
+        </view>
+      </view>  
+    </view>
+
+        </block>
+        <block wx:if="{{tabs1[1].isActive}}">2</block>
+        <block wx:if="{{tabs1[2].isActive}}">3</block>
+    </tabs>
+</view>

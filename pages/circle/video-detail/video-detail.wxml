@@ -1,0 +1,27 @@
+<import src="../template/user-comment/user-comment-template.wxml" />
+<scroll-view class="video-detail-container" scroll-y="true">
+	<image src="{{detailData.head_img}}" class="detail-head-img"></image>
+	<view class="video-detail">
+		<view class="video-content">
+			<view class="user-message">
+				<image src="{{detailData.avarat}}"></image>
+				<view class="avatar-right">
+					<text class="author-name">{{detailData.author_name}}</text>
+					<text class="sign_in">生活在于坚持</text>
+				</view>
+
+				<view class="circle-img">
+					<image wx:if="{{collected}}" catchtap="onCollectionTap" src="/images/circle/collection.png"></image>
+					<image wx:else catchtap="onCollectionTap" src="/images/circle/collection-anti.png"></image>
+					<image catchtap="onShareTap" class="share-img" src="/images/circle/share.png"></image>
+				</view>
+			</view>
+			<text class="video-detail-title">{{detailData.detail_title}}</text>
+			<text class="video-detail-date">发布于 {{detailData.detail_date}}</text>
+		</view>
+		<view class="user-comment">
+			<text class="comment-num">共82条评论</text>
+			<template is="user-comment-template"></template>
+		</view>
+	</view>
+</scroll-view>

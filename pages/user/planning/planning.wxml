@@ -1,0 +1,21 @@
+<view class="page__bd">
+	<mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+</view>
+<view class="planning-container">
+	<view class="planning-content">
+		<text class="text">1、每天坚持背10个单词5个短语..</text>
+		<text class="planning-date">2019.10.23</text>
+	</view>
+
+	<view class="planning-content">
+		<text class="text">2、坚持健身锻炼，有个好身体才是棒..</text>
+		<text class="planning-date">2019.12.02</text>
+	</view>
+
+	<view class="image-plus">
+		<image src="{{imageUrl[0]}}" animation="{{animCollect}}" bindtap="collect"></image>
+		<image src="{{imageUrl[1]}}" animation="{{animTranspond}}" bindtap="transpond"></image>
+		<image src="{{imageUrl[2]}}" animation="{{animInput}}" bindtap="input"></image>
+		<image src="{{imageUrl[3]}}" class="img-plus-style" animation="{{animPlus}}" catchtap="moreBtn"></image>
+	</view>
+</view>

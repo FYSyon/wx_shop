@@ -1,0 +1,79 @@
+.user-feedback {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+.feedback-input {
+    width: 96%;   
+
+    padding: 10rpx 10rpx 0 10rpx;
+    font-size: 30rpx;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 2rpx #bbb;
+    border-radius: 5rpx;
+}
+.feedback-content {  
+    color: #333;
+    height: 300rpx;
+}
+.placeholder-textarea {
+    font-size: 30rpx;
+    font-weight: 450;
+    color: #333;
+}
+.telphone {
+    color: #333;
+    height: 70rpx;
+    line-height: 70rpx;
+    margin: 50rpx 0;
+    font-size: 30rpx;
+}
+.placeholder-input {
+    color: #aaa;
+}
+.upload-image {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: 250rpx;
+    padding: 10rpx 0 0 10rpx;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 2rpx #bbb;
+    border-radius: 5rpx;
+}
+.upload-tip {
+    font-size: 28rpx;
+    color: #666;
+    font-weight: 500;
+}
+.upload-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150rpx;
+    height: 150rpx;
+    margin-top: 25rpx;
+    border: 1px dashed #ddd;
+
+} 
+.upload-content image {
+    width: 50rpx;
+    height: 50rpx;
+    margin-bottom: 20rpx;
+}
+.upload-content text {
+    font-size: 32rpx;
+    color: #666;
+}
+.submit {
+    width: 220rpx;
+    height: 70rpx;
+    text-align: center;
+    line-height: 70rpx;
+    background-color: #ddd;
+    color: #333;
+    margin-top: 40rpx;
+}

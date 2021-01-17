@@ -1,0 +1,38 @@
+.icon-option-container {
+    width: 95%;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #e7e4f7;
+    position: relative;
+}
+.icon-option-container:last-of-type{
+    border: none;
+}
+.option-img {
+    width: 40rpx;
+    height: 40rpx;
+}
+/* .option-img:last-of-type {
+    width: 50rpx;
+    height: 50rpx;
+} */
+.option-text {
+    font-size: 30rpx;
+    color: #777;
+    margin-left: 20rpx;
+    letter-spacing: 2px;
+    vertical-align: -5rpx;
+}
+.right {
+    position: absolute;
+    right: 10rpx;
+    top: 0;
+}
+.icon-right {
+    width: 35rpx;
+    height: 35rpx;
+    /* vertical-align: -10rpx; */
+}

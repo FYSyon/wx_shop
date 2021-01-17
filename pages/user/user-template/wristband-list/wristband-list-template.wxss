@@ -1,0 +1,27 @@
+.wristband-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15rpx;
+    margin-left: 30rpx;
+
+}
+.img-circle {
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 35rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(207, 207, 207, 0.7);
+}
+.wristband-img {
+    width: 60rpx;
+    height: 60rpx;
+}
+.wristband-text {
+    font-size: 18rpx;
+    color: rgb(205, 201, 201);
+    letter-spacing: 1px;
+    margin-top: 8rpx;
+}

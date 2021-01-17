@@ -1,0 +1,44 @@
+@import "../user-template/order-form-template/search-order-form/search-order-form.wxss";
+@import "../user-template/order-form-template/commodity-list-template/commodity-list-template.wxss";
+.order-form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+}
+.tab {
+    width: 100%;
+    height: 60rpx;
+    display: flex;
+    flex-direction: row;
+    white-space: normal;
+    background-color: #fff;
+    font-size: 26rpx;
+    padding-top: 10rpx;
+    z-index: 100;
+    padding-bottom: 20rpx;
+}
+.tab-item {
+    height: 55rpx;
+    line-height: 55rpx;
+    color: #333;
+    text-align: center;
+    display: inline-block;
+    font-size: 26rpx;
+    margin: 0 17.5rpx;
+    width: 12%;
+}
+.active {
+    color: red;
+    border-bottom: 2px solid red;
+}
+.tab-content {}
+
+.scroll-h {
+    height: 100%;
+}
+
+.search-order-form {
+    margin-top: 20rpx;
+}
+.commodity-content {
+}

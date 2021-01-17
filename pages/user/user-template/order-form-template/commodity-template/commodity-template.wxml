@@ -1,0 +1,21 @@
+<template name="commodity-template">
+	<view class="commodity-container">
+		<image class="commodity-image" src="{{commodity_img}}"></image>
+
+			<view class="commodity-message">
+				<view class="commodity-top">
+					<text class="commodity-detail">{{commodity_detail}}</text>
+					<text class="commodity-money">￥ {{commodity_money}}</text>
+				</view>
+				<view class="commodity-middle">
+					<text>{{commodity_title}}</text>
+					<text>× 1</text>
+				</view>
+				<view class="commodity-bottom">
+					<text class="return">{{commodity_return}}</text>
+					<text class="barter">{{commodity_darter}}</text>
+				</view>
+			</view>
+
+	</view>
+</template>

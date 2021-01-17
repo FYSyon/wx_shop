@@ -1,0 +1,82 @@
+<import src="../template/detail-item-template/detail-item-template.wxml" />
+<view class="circle-container">
+	<view class="tab" scroll-left="{{scrollLeft}}">
+		<view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="switchNav">推荐</view>
+		<view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="switchNav">附近</view>
+		<view class="tab-item item-add">
+			+
+		</view>
+		<view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="switchNav">视频</view>
+		<view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="switchNav">资源</view>
+	</view>
+
+	<swiper style="height:{{winHeight}}px" current="{{currentTab}}" duration="400" bindchange="switchTap">
+		<swiper-item>
+			<scroll-view class="scroll-h" scroll-y="true">
+				<block wx:for="{{details}}" wx:for-item="item">
+					<view catchtap="onVideoTap" class="video-list" data-postid="{{item.postId}}">
+						<template is="detail-item-template" data="{{...item}}"></template>
+					</view>
+				</block>
+			</scroll-view>
+		</swiper-item>
+
+		<swiper-item>
+			<swiper-view>附近</swiper-view>
+		</swiper-item>
+		<swiper-item>
+			<swiper-view>
+				<view class='pages'>
+					<view class='top'><text class='top_name'>视频：</text></view>
+					<view class="images_box">
+						<block wx:key="imgbox" wx:for="{{imgbox}}">
+							<view class='img-box'>
+								<image class='img' src='{{item}}'></image>
+								<view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+									<image class='img' src='/images/circle/del.png'></image>
+								</view>
+							</view>
+						</block>
+						<view class='img-box' bindtap='addPic1' wx:if="{{imgbox.length<9}}">
+							<image class='img' src='/images/circle/add.png'></image>
+						</view>
+					</view>
+					<button bindtap='fb'>上传视频</button>
+					<view>
+						<video src="cloud://wjuploat-b330j.776a-wjuploat-b330j-1302021469/1591947930214.mp4"></video>
+					</view>
+				</view>
+			</swiper-view>
+		</swiper-item>
+		<swiper-item>
+			<swiper-view>
+				<view class="block">
+					<!--搜索-->
+					<view class="page__bd">
+						<mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+					</view>
+					<!--资源-->
+					<view>
+						<!--wx传参是靠data-***-->
+						<view class="seek_se" wx:for="{{list}}" bindtap="nav" data-index="{{index}}" wx:key="{{index}}">
+							<view class="seek_image">
+								<image src="/images/circle/5.png" />
+							</view>
+							<view class="seek_text">
+								<view>{{item.text}}</view>
+								<view>上传资源</view>
+							</view>
+							<view class="direct">
+								<navigator url="{{item.url}}">
+									<image src="/images/icon/arrow.png" style="width:40rpx;height:40rpx"></image>
+								</navigator>
+							</view>
+						</view>
+					</view>
+				</view>
+			</swiper-view>
+		</swiper-item>
+	</swiper>
+
+
+</view>

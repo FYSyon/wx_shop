@@ -1,0 +1,9 @@
+<template name="search-order-form">
+    <view class="search-container">
+        <view class="search">
+            <icon type="search" class="search-img"></icon>
+            <input type="text" focus="true" placeholder="搜索订单" class="search-input" placeholder-class="search-tip"></input>
+        </view>
+        <image class="question" src="/images/icon/question.png"></image>
+    </view> 
+</template>
